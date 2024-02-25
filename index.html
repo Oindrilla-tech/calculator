@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="calc">
+            <input type="text" id="display" readonly>
+        </div>
+        <div class="btns">
+            <input type="button" class="btn" id="bt-1" value="7" onclick="appendNumber(value)"/> 
+            <input type="button" value="8" onclick="appendNumber(value)" class="btn" id="bt-2"/>  
+            <input type="button" value="9" onclick="appendNumber(value)" class="btn" id="bt-3"/>  
+            <input type="button" value="DEL" onclick="deleteL()" class="btn" id="bt-4"/>
+            <input type="button" value="4" onclick="appendNumber(value)" class="btn" id="bt-5"/>  
+            <input type="button" value="5" onclick="appendNumber(value)" class="btn" id="bt-6"/>  
+            <input type="button" value="6" onclick="appendNumber(value)" class="btn" id="bt-7"/>  
+            <input type="button" value="+" onclick="appendNumber(value)" class="btn" id="bt-8"/>  
+            <input type="button" value="1" onclick="appendNumber(value)" class="btn" id="bt-9"/>  
+            <input type="button" value="2" onclick="appendNumber(value)" class="btn" id="bt-10"/>  
+            <input type="button" value="3" onclick="appendNumber(value)" class="btn" id="bt-11"/> 
+            <input type="button" value="-" onclick="appendNumber(value)" class="btn" id="bt-12"/>  
+            <input type="button" value="." onclick="appendNumber(value)" class="btn" id="bt-13"/>  
+            <input type="button" value="0" onclick="appendNumber(value)" class="btn" id="bt-14"/>  
+            <input type="button" value="/" onclick="appendNumber(value)" class="btn" id="bt-15"/>  
+            <!-- <input type="button" value="*" onclick="appendNumber(value)" class="btn" id="bt-16"/>   -->
+            <button value="*" onclick="appendNumber(value)" class="btn" id="bt-16">x</button>  
+            <!-- <div class="additional"> -->
+            <input type="button" class="additional" value="RESET" onclick="reset(value)" id="bt-17"/>
+            <input type="button" class="additional" value="=" onclick="calculate()" id="bt-18"/>
+            <!-- </div> -->
+        </div>
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
